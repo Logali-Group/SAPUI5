@@ -3,7 +3,28 @@
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content></content>
+					<content>
+						<HBox id="hBox1">
+							<Label id="labelEmployee" text="{i18n>labelEmployee}" class="sapUiSmallMargin"/>
+							<Input id="inputEmployee" maxLength="6" width="200px" class="sapUiSmallMarginEnd" liveChange="onValidate"/>
+							<Label id="labelCountry" text="{i18n>labelCountry}" class="sapUiSmallMargin"/>
+ <Select id="slCountry" 
+	   forceSelection="false">
+	<items>
+	   <core:Item key="USA" 
+  		        text="{i18n>usa}">
+	   </core:Item>
+	   <core:Item key="UK" 
+			  text="{i18n>uk}">
+	   </core:Item>
+	   <core:Item key="Spain" 
+	   		  text="{i18n>spain}">
+	   </core:Item>
+ 	 </items>
+   </Select>
+
+						</HBox>
+					</content>
 				</Page>
 			</pages>
 		</App>
